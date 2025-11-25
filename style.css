@@ -1,44 +1,174 @@
-/* --- Banner Image Styling Refinement --- */
-/* This ensures the banner section is prominent */
-.hero-banner {
-    position: relative; /* Allows text to be positioned over the image */
-    overflow: hidden; 
-    max-height: 350px; /* Gives the banner more vertical space */
+/* --- AranaVA Professional Styling --- */
+
+/* --- Global Styles & Background --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #343a40; /* Darker text for readability */
+    background-color: #f8f9fa; /* Very light gray background (clean) */
 }
 
-.hero-banner img {
-    /* Existing code: width: 100%; height: auto; display: block; object-fit: cover; */
-    max-height: 350px; /* Same max-height as the container */
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(85%); /* Slightly darkens the image so text (if added) stands out */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* --- Headline Refinements --- */
+/* --- Typography --- */
 h1 {
-    font-size: 2.8em; /* Make the main title much larger */
-    font-weight: 900; /* Extra bold */
-    letter-spacing: -1px; /* Tighter spacing for a modern look */
-    color: #004085; /* A deeper, darker blue for professionalism */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #007bff; /* Primary Blue for Heading */
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-top: 40px;
 }
 
 h2 {
-    font-size: 1.6em;
-    color: #495057; /* Dark gray for a serious tone */
-    margin-bottom: 50px; /* More space below the subtitle */
-    border-bottom: 3px solid #007bff; /* Thicker blue line for emphasis */
-    padding-bottom: 12px;
+    color: #6c757d; /* Soft Gray for Subtitle */
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #e9ecef; /* Subtle divider line */
+    padding-bottom: 15px;
 }
 
-/* --- Section Styling Refinement --- */
-/* Makes the Client/VA boxes feel more premium */
+h3 {
+    color: #17a2b8; /* Secondary Teal/Cyan for Section Headings */
+    font-size: 1.4em;
+    border-left: 4px solid #17a2b8;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+/* --- Banner Styling (Ensures your image works perfectly) --- */
+.hero-banner {
+    width: 100%;
+    overflow: hidden; 
+    max-height: 350px; /* Limits the banner height */
+}
+
+.hero-banner img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* --- Main Content Boxes (Client & VA) --- */
+.info-grid {
+    display: flex;
+    gap: 25px; /* Space between the two columns */
+    align-items: stretch;
+    margin-bottom: 40px;
+}
+
 .client-info, .va-info {
-    border-top: 5px solid #007bff; /* Adds a strong blue accent line to the top */
-    transition: transform 0.3s ease;
+    flex: 1;
+    background-color: #ffffff; /* White background for clean boxes */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle professional shadow */
+    transition: box-shadow 0.3s ease;
+    border-top: 5px solid #007bff; /* Strong blue accent line */
+}
+
+.va-info {
+    border-top: 5px solid #ffc107; /* Yellow accent for VAs (matching banner) */
 }
 
 .client-info:hover, .va-info:hover {
-    transform: translateY(-5px); /* Subtle lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More noticeable shadow on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slight lift on hover */
 }
+
+/* --- Buttons (Call to Action) --- */
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px; /* Pill shape for modern look */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.primary-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.primary-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: #ffc107; /* Yellow background (matching banner) */
+    color: #343a40; /* Dark text for contrast */
+    border: none;
+}
+
+.secondary-button:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* --- Services List --- */
+.services {
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #e9f5ff; /* Very light blue wash for this section */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center;
+}
+
+.service-list li {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #cce5ff; /* Light blue border */
+    border-radius: 6px;
+    width: calc(33.333% - 20px); /* Three columns on desktop */
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-box {
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px dashed #ffc107; /* Eye-catching dashed yellow border */
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #e9ecef;
+    color: #6c757d;
+    font-size: 0.9em;
+    background-color: #ffffff;
+}
+
+/* --- Mobile Optimization (The essential final step) --- */
+@media (max-width: 900px)
