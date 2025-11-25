@@ -42,11 +42,11 @@ h3 {
     margin-top: 30px;
 }
 
-/* --- Banner Styling --- */
+/* --- Banner Styling (FIXED: Allows full image display) --- */
 .hero-banner {
     width: 100%;
     overflow: hidden; 
-    max-height: 300px; /* Limits banner height */
+    /* max-height removed to fix the "half banner" issue */
 }
 
 .hero-banner img {
@@ -54,6 +54,7 @@ h3 {
     height: auto;
     display: block;
     object-fit: cover;
+    /* max-height removed to fix the "half banner" issue */
 }
 
 /* --- Main Content Boxes (Client & VA) --- */
@@ -170,7 +171,16 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+}
+
+@media (max-width: 600px) {
+    /* Stack three-column services list vertically on phones */
     .service-list li {
         width: 90%; 
+        margin: 10px auto;
+    }
+    
+    .container {
+        padding: 10px;
     }
 }
