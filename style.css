@@ -1,52 +1,52 @@
-/* --- AranaVA Professional Styling --- */
+/* --- AranaVA Clean & Professional Styling --- */
 
-/* --- Global Styles & Background --- */
+/* --- Global Styles --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #343a40; /* Darker text for readability */
-    background-color: #f8f9fa; /* Very light gray background (clean) */
+    color: #333; /* Standard dark text */
+    background-color: #fcfcfc; /* Off-white, very subtle light background */
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* --- Typography --- */
 h1 {
-    color: #007bff; /* Primary Blue for Heading */
+    color: #0069a1; /* Deep, professional blue */
     text-align: center;
-    font-size: 2.8em;
-    font-weight: 700;
+    font-size: 2.6em;
+    font-weight: 600;
     margin-top: 40px;
 }
 
 h2 {
-    color: #6c757d; /* Soft Gray for Subtitle */
+    color: #666;
     text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 50px;
-    border-bottom: 2px solid #e9ecef; /* Subtle divider line */
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee; /* Light, subtle divider */
     padding-bottom: 15px;
 }
 
 h3 {
-    color: #17a2b8; /* Secondary Teal/Cyan for Section Headings */
-    font-size: 1.4em;
-    border-left: 4px solid #17a2b8;
+    color: #333;
+    font-size: 1.25em;
+    border-left: 5px solid #ffaa00; /* Uses the yellow from your banner as an accent */
     padding-left: 15px;
     margin-top: 30px;
 }
 
-/* --- Banner Styling (Ensures your image works perfectly) --- */
+/* --- Banner Styling --- */
 .hero-banner {
     width: 100%;
     overflow: hidden; 
-    max-height: 350px; /* Limits the banner height */
+    max-height: 300px; /* Limits banner height */
 }
 
 .hero-banner img {
@@ -59,77 +59,70 @@ h3 {
 /* --- Main Content Boxes (Client & VA) --- */
 .info-grid {
     display: flex;
-    gap: 25px; /* Space between the two columns */
+    gap: 20px;
     align-items: stretch;
     margin-bottom: 40px;
 }
 
 .client-info, .va-info {
     flex: 1;
-    background-color: #ffffff; /* White background for clean boxes */
+    background-color: #ffffff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle professional shadow */
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Very light shadow */
     transition: box-shadow 0.3s ease;
-    border-top: 5px solid #007bff; /* Strong blue accent line */
-}
-
-.va-info {
-    border-top: 5px solid #ffc107; /* Yellow accent for VAs (matching banner) */
 }
 
 .client-info:hover, .va-info:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle lift on hover */
 }
 
-/* --- Buttons (Call to Action) --- */
+/* --- Buttons (Clean and Direct CTAs) --- */
 .button {
     display: inline-block;
-    padding: 12px 30px;
-    border-radius: 50px; /* Pill shape for modern look */
+    padding: 10px 25px;
+    border-radius: 4px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 20px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
 }
 
 .primary-button {
-    background-color: #007bff;
+    background-color: #0069a1; /* Deep Blue CTA */
     color: white;
-    border: none;
+    border: 1px solid #0069a1;
 }
 
 .primary-button:hover {
-    background-color: #0056b3; 
-    transform: translateY(-2px);
+    background-color: #005682; 
 }
 
 .secondary-button {
-    background-color: #ffc107; /* Yellow background (matching banner) */
-    color: #343a40; /* Dark text for contrast */
-    border: none;
+    background-color: #ffaa00; /* Yellow CTA */
+    color: #333;
+    border: 1px solid #ffaa00;
 }
 
 .secondary-button:hover {
-    background-color: #e0a800;
-    transform: translateY(-2px);
+    background-color: #e69500;
 }
 
-/* --- Services List --- */
+/* --- Services List (Grid Layout) --- */
 .services {
     padding: 40px 20px;
     margin-top: 30px;
-    background-color: #e9f5ff; /* Very light blue wash for this section */
-    border-radius: 8px;
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    border-radius: 6px;
     text-align: center;
 }
 
 .service-list ul {
     list-style: none;
     padding: 0;
-    margin: 20px auto;
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
 }
 
@@ -137,11 +130,11 @@ h3 {
     background-color: #ffffff;
     margin: 10px;
     padding: 15px;
-    border: 1px solid #cce5ff; /* Light blue border */
-    border-radius: 6px;
-    width: calc(33.333% - 20px); /* Three columns on desktop */
+    border-radius: 4px;
+    width: calc(30% - 20px); /* Three columns on desktop */
     text-align: left;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid #ffaa00; /* Subtle yellow underline accent */
 }
 
 /* --- Contact Section --- */
@@ -153,10 +146,11 @@ h3 {
 
 .contact-box {
     margin: 30px auto;
-    padding: 25px;
-    border: 2px dashed #ffc107; /* Eye-catching dashed yellow border */
-    border-radius: 10px;
+    padding: 20px 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
     display: inline-block;
+    background-color: #ffffff;
 }
 
 /* --- Footer --- */
@@ -164,11 +158,19 @@ footer {
     text-align: center;
     padding: 30px;
     margin-top: 50px;
-    border-top: 1px solid #e9ecef;
-    color: #6c757d;
+    border-top: 1px solid #eee;
+    color: #888;
     font-size: 0.9em;
     background-color: #ffffff;
 }
 
-/* --- Mobile Optimization (The essential final step) --- */
-@media (max-width: 900px)
+/* --- Mobile Optimization --- */
+@media (max-width: 900px) {
+    .info-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .service-list li {
+        width: 90%; 
+    }
+}
