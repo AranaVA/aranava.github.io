@@ -1,42 +1,44 @@
-/* --- New Flexbox Grid for Client/VA Info --- */
-/* This creates a two-column layout on desktop screens */
-@media (min-width: 768px) {
-    .info-grid {
-        display: flex;
-        gap: 20px; /* Space between the two columns */
-        align-items: stretch; /* Makes sure both boxes have the same height */
-    }
-
-    .client-info, .va-info {
-        flex: 1; /* Both sections take equal width */
-        margin-bottom: 0; /* Remove bottom margin since gap handles spacing */
-    }
-
-    .service-list ul {
-        /* Adjust alignment for desktop */
-        text-align: center;
-    }
-
-    .service-list li {
-        display: inline-block; /* Makes service list items flow horizontally */
-        width: 30%; /* Gives each list item about one-third of the space */
-        margin-right: 1.5%;
-        margin-bottom: 15px;
-        vertical-align: top; /* Aligns them nicely at the top */
-    }
+/* --- Banner Image Styling Refinement --- */
+/* This ensures the banner section is prominent */
+.hero-banner {
+    position: relative; /* Allows text to be positioned over the image */
+    overflow: hidden; 
+    max-height: 350px; /* Gives the banner more vertical space */
 }
 
-/* --- Banner Image Styling Refinement --- */
-/* Ensures the banner image sits nicely on the page */
 .hero-banner img {
     /* Existing code: width: 100%; height: auto; display: block; object-fit: cover; */
-    max-height: 250px; /* Limits the height of the banner on very large screens */
+    max-height: 350px; /* Same max-height as the container */
     width: 100%;
     object-fit: cover;
+    filter: brightness(85%); /* Slightly darkens the image so text (if added) stands out */
 }
 
-/* --- Footer Refinement --- */
-footer {
-    padding: 30px;
-    background-color: #f0f7ff; /* Gives the footer a light blue background */
+/* --- Headline Refinements --- */
+h1 {
+    font-size: 2.8em; /* Make the main title much larger */
+    font-weight: 900; /* Extra bold */
+    letter-spacing: -1px; /* Tighter spacing for a modern look */
+    color: #004085; /* A deeper, darker blue for professionalism */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #495057; /* Dark gray for a serious tone */
+    margin-bottom: 50px; /* More space below the subtitle */
+    border-bottom: 3px solid #007bff; /* Thicker blue line for emphasis */
+    padding-bottom: 12px;
+}
+
+/* --- Section Styling Refinement --- */
+/* Makes the Client/VA boxes feel more premium */
+.client-info, .va-info {
+    border-top: 5px solid #007bff; /* Adds a strong blue accent line to the top */
+    transition: transform 0.3s ease;
+}
+
+.client-info:hover, .va-info:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More noticeable shadow on hover */
 }
