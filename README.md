@@ -1,4 +1,4 @@
-# 🤝 AranaVA - Connecting Clients with Top VAs
+# 🤝 AranaVA - Connecting Clients with Top VA's
 
 This repository contains the source code for the AranaVA platform/resource site, designed to match clients with professional Virtual Assistants and help VAs grow their careers.
 
