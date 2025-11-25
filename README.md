@@ -1,7 +1,9 @@
-# 🌟 Welcome to AranaVA!
+# 🤝 AranaVA - Connecting Clients with Top VAs
 
-## Your Professional Virtual Assistant Partner
+This repository contains the source code for the AranaVA platform/resource site, designed to match clients with professional Virtual Assistants and help VAs grow their careers.
 
-This repository contains the source code for my portfolio website, hosted for free using GitHub Pages at: **https://arana.github.io**
+## 🚀 Live Website
+You can view the live site here: https://arana.github.io
 
-I offer specialized VA services to help businesses with administrative, technical, and creative support.
+## 💻 About This Site
+This site is hosted entirely for free using GitHub Pages and built with basic web technologies (HTML/CSS).
